@@ -1,0 +1,1 @@
+# nuxtjs-bootstrap-sidebar2
