@@ -71,6 +71,10 @@
   },
   "peerDependencies": {
     "vue": "^2.6.12",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "sass": "^1.32.6"
