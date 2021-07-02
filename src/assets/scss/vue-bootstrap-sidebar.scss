@@ -43,10 +43,7 @@
       .sidebar-button.visible {
         position: absolute;
         margin: auto;
-        width: 25px;
-        height: 25px;
-        padding-top: 3px;
-        right: 0;
+        right: 10px;
         border-radius: 50%;
 
         &:hover {
@@ -192,11 +189,7 @@
 
       .sidebar-button.visible {
         position: absolute;
-        margin: auto;
-        width: 25px;
-        height: 25px;
-        padding-top: 3px;
-        right: 0;
+        right: 10px;
         border-radius: 50%;
 
         &:hover {
