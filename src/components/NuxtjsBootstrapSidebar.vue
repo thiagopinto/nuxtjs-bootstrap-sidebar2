@@ -3,9 +3,9 @@
     <!-- Sidebar -->
     <nav
       id="sidebar"
-      :class="`nuxtjs-bootstrap-sidebar default-theme  ${
-        [theme] && [show ? 'visible' : 'hidden']
-      } ${align}`"
+      :class="`nuxtjs-bootstrap-sidebar   ${
+        [show ? 'visible' : 'hidden']
+      } ${theme} ${align}`"
       data-color="white"
       data-active-color="danger"
     >
@@ -133,9 +133,9 @@
       <!--/ .items-wrapper -->
     </nav>
     <div
-      :class="`main-panel  default-theme ${
-        [theme] && [show ? 'visible' : 'hidden']
-      } ${align}`"
+      :class="`main-panel ${
+        [show ? 'visible' : 'hidden']
+      } ${theme} ${align}`"
     >
       <b-nav class="container-fluid">
         <b-nav-item class="left" @click="onButtonClick">
@@ -170,6 +170,12 @@
   </div>
 </template>
 <script>
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
+
+library.add(faBars);
+library.add(faTimesCircle);
 
 export default {
   name: "NuxtjsBootstrapSidebar",
