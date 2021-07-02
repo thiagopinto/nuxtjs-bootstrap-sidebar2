@@ -1,0 +1,81 @@
+{
+  "name": "nuxtjs-bootstrap-sidebar",
+  "version": "0.0.18",
+  "description": "Sidebar component for Vue apps created using the project's bootstrap-vue fork vue-bootstrap-sidebar by Juraj Kavka",
+  "author": "Thiago Pinto Dias <thiagopinto.lx@gmail.com>",
+  "license": "MIT",
+  "main": "dist/nuxtjs-bootstrap-sidebar.ssr.js",
+  "browser": "dist/nuxtjs-bootstrap-sidebar.esm.js",
+  "module": "dist/nuxtjs-bootstrap-sidebar.esm.js",
+  "unpkg": "dist/nuxtjs-bootstrap-sidebar.min.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagopinto/nuxtjs-bootstrap-sidebar.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-bootstrap",
+    "vue-bootstrap-sidebar",
+    "vue-bootstrap-sidebar-menu",
+    "vue-component",
+    "vue-sidebar",
+    "vue-sidebar-menu",
+    "sidebar",
+    "sidebar-menu",
+    "admin-sidebar",
+    "bootstrap",
+    "bootstrap-vue",
+    "nuxtjs"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "serve": "vue-cli-service serve dev/serve.js",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
+  },
+  "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "sass": "^1.32.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-alias": "^3.1.1",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "@rollup/plugin-replace": "^2.3.4",
+    "@vue/cli-plugin-babel": "^4.5.10",
+    "@vue/cli-service": "^4.5.10",
+    "cross-env": "^7.0.3",
+    "minimist": "^1.2.5",
+    "rollup": "^2.36.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "^5.1.9",
+    "sass": "^1.32.6",
+    "sass-loader": "^10.2.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.2",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.12",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "sass": "^1.32.6"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}

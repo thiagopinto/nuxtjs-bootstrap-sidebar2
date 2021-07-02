@@ -1,0 +1,90 @@
+@import "./variables";
+@import "./vue-bootstrap-sidebar";
+
+.nuxtjs-bootstrap-sidebar.default-theme {
+  background-color: $transparent-sidebar-color;
+  .sidebar-header {
+    //background-color: $bg-color;
+    .logo-mini {
+      img {
+      }
+      .logo-title {
+        h2 {
+        }
+      }
+    }
+
+    .sidebar-button.visible {
+      border: 1px solid $bg-color;
+      color: $bg-color;
+      background-color: $base-color;
+
+      &:hover {
+        border: 1px solid $base-color;
+        color: $base-color;
+        background-color: $bg-color;
+      }
+
+      svg {
+      }
+    }
+    .sidebar-button.hidden {
+    }
+  }
+
+  hr {
+    margin: 0 auto;
+    width: 80%;
+    color: $sidebar-color;
+    background-color: $sidebar-color;
+  }
+
+  .list-group {
+    .list-group-item {
+      color: #fff;
+
+      a {
+      }
+      span.fa-icon {
+      }
+
+      span.fa-icon.right {
+      }
+    }
+    .list-group-item.router-link-exact-active,
+    .list-group-item:hover {
+      background-color: $bg-color;
+      color: $color;
+
+      .before {
+        background-color: $bg-color;
+      }
+      .after {
+        background-color: $bg-color;
+      }
+
+      .before::before {
+        background-color: $transparent-sidebar-color;
+      }
+      .after::after {
+        background-color: $transparent-sidebar-color;
+      }
+    }
+  }
+}
+
+.main-panel.default-theme {
+  .nav {
+    background-color: $bg-color;
+  }
+
+  .content {
+    background-color: $bg-color;
+  }
+
+  &.visible {
+  }
+
+  &.hidden {
+  }
+}
