@@ -139,6 +139,15 @@ export default {
 
 ```
 
+![screenshot01](https://raw.githubusercontent.com/thiagopinto/nuxtjs-bootstrap-sidebar2/main/screenshot/Captura%20de%20Tela%202021-07-02%20às%2011.46.27.png)
+![screenshot02](https://raw.githubusercontent.com/thiagopinto/nuxtjs-bootstrap-sidebar2/main/screenshot/Captura%20de%20Tela%202021-07-02%20às%2011.46.40.png)
+![screenshot03](https://raw.githubusercontent.com/thiagopinto/nuxtjs-bootstrap-sidebar2/main/screenshot/Captura%20de%20Tela%202021-07-02%20às%2011.46.49.png)
+![screenshot04](https://raw.githubusercontent.com/thiagopinto/nuxtjs-bootstrap-sidebar2/main/screenshot/Captura%20de%20Tela%202021-07-02%20às%2011.50.35.png)
+![screenshot04](https://raw.githubusercontent.com/thiagopinto/nuxtjs-bootstrap-sidebar2/main/screenshot/Captura%20de%20Tela%202021-07-02%20às%2011.50.46.png)
+![screenshot04](https://raw.githubusercontent.com/thiagopinto/nuxtjs-bootstrap-sidebar2/main/screenshot/Captura%20de%20Tela%202021-07-02%20às%2011.50.57.png)
+
+
+
 ## Configuration (props)
 
 Configuration options (*props*) of the `BootstrapSidebar` are:
