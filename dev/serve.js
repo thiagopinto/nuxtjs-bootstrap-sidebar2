@@ -7,7 +7,10 @@ import { faUserSecret, faHome, faTint, faUsers,
          faPhone, faChild, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { router } from './_demo/router'
+import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
 
+library.add(faBars);
+library.add(faTimesCircle);
 library.add(faUserSecret)
 library.add(faHome)
 library.add(faTint)
@@ -15,6 +18,7 @@ library.add(faUsers)
 library.add(faPhone)
 library.add(faChild)
 library.add(faBars)
+library.add(faTimesCircle)
 
 Vue.config.productionTip = false;
 
