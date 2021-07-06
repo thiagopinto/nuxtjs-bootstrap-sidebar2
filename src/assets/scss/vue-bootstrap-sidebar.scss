@@ -300,6 +300,11 @@
   }
 }
 
+.main-panel {
+  min-height: 100%;
+  overflow: auto;
+}
+
 .main-panel.left {
   position: fixed;
   border-radius: 10px;
@@ -475,7 +480,6 @@
     .nav-item.left {
       left: 90px;
     }
-
   }
 
   .main-panel.right.hidden {
@@ -484,6 +488,5 @@
     .nav-item.right {
       right: 90px;
     }
-
   }
 }
