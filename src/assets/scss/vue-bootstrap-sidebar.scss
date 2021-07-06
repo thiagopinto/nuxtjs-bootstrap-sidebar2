@@ -221,6 +221,8 @@
       }
 
       .list-group-item.router-link-exact-active,
+      .list-group-item.nuxt-link-exact-active,
+      .list-group-item.nuxt-link-active,
       .list-group-item:hover {
         border-bottom-right-radius: 1rem;
         border-top-right-radius: 1rem;
