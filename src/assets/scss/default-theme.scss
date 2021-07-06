@@ -3,6 +3,14 @@
 
 .nuxtjs-bootstrap-sidebar.default-theme {
   background-color: $transparent-sidebar-color;
+  
+  &.left {
+    border-left: 5px solid $sidebar-color;
+  }
+  &.right {
+    border-right: 5px solid $sidebar-color;
+  }
+
   .sidebar-header {
     //background-color: $bg-color;
     .logo-mini {
