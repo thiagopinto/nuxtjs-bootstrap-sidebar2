@@ -31,7 +31,7 @@
                 :key="index"
                 v-b-tooltip.hover.right
                 :title="link.name"
-                class="sidebar-menu-item mt-3 mb-3 pt-2 pb-2"
+                class="sidebar-menu-item mt-2 mb-2 pt-2 pb-2"
                 :class="`${align}`"
                 :to="link.href"
               >
@@ -62,7 +62,7 @@
                 :key="index"
                 v-b-tooltip.hover.right
                 :title="link.name"
-                class="sidebar-menu-item sidebar-dropdown mt-3 mb-3 pt-2 pb-2"
+                class="sidebar-menu-item sidebar-dropdown mt-2 mb-2 pt-2 pb-2"
                 style="padding-right: 0.03rem"
                 :class="`${align}`"
                 v-b-toggle="`accordion-${index}-${link.href}`"
@@ -97,7 +97,7 @@
                   <b-list-group-item
                     v-for="(child, idChild) in link.children"
                     :key="idChild"
-                    class="sidebar-menu-item child-level-1 mt-3 mb-3 pt-2 pb-2"
+                    class="sidebar-menu-item child-level-1 mt-2 mb-2 pt-2 pb-2"
                     :class="`${align}`"
                     v-b-tooltip.hover.right
                     :title="child.name"
