@@ -29,7 +29,6 @@
             <template v-if="link.href !== undefined">
               <b-list-group-item
                 :key="index"
-                v-b-tooltip.hover.right
                 :title="link.name"
                 class="sidebar-menu-item mt-2 mb-2 pt-2 pb-2"
                 :class="`${align}`"
@@ -60,7 +59,6 @@
             <template v-else>
               <b-list-group-item
                 :key="index"
-                v-b-tooltip.hover.right
                 :title="link.name"
                 class="sidebar-menu-item sidebar-dropdown mt-2 mb-2 pt-2 pb-2"
                 style="padding-right: 0.03rem"
@@ -100,7 +98,6 @@
                     :key="idChild"
                     class="sidebar-menu-item child-level-1 mt-2 mb-2 pt-2 pb-2"
                     :class="`${align}`"
-                    v-b-tooltip.hover.right
                     :title="child.name"
                     :to="child.href"
                   >
