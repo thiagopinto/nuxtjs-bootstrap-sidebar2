@@ -27,33 +27,65 @@
         <b-list-group class="items-wrapper nav">
           <template v-for="(link, index) in links">
             <template v-if="link.href !== undefined">
-              <b-list-group-item
-                :key="index"
-                :title="link.name"
-                class="sidebar-menu-item mt-2 mb-2 pt-2 pb-2"
-                :class="`${align}`"
-                :to="link.href"
-              >
-                <div class="before"></div>
-                <span class="fa-icon left">
-                  <component
-                    v-if="link.faIcon"
-                    :is="'font-awesome-icon'"
-                    :icon="link.faIcon"
-                  />
-                </span>
-                <span class="link-name">
-                  {{ link.name }}
-                </span>
-                <span class="fa-icon right">
-                  <component
-                    v-if="link.faIcon"
-                    :is="'font-awesome-icon'"
-                    :icon="link.faIcon"
-                  />
-                </span>
-                <div class="after"></div>
-              </b-list-group-item>
+
+              <template v-if="link.external">
+                <b-list-group-item
+                  :key="index"
+                  :title="link.name"
+                  class="sidebar-menu-item mt-2 mb-2 pt-2 pb-2"
+                  :class="`${align}`"
+                  :href="link.href"
+                >
+                  <div class="before"></div>
+                  <span class="fa-icon left">
+                    <component
+                      v-if="link.faIcon"
+                      :is="'font-awesome-icon'"
+                      :icon="link.faIcon"
+                    />
+                  </span>
+                  <span class="link-name">
+                    {{ link.name }}
+                  </span>
+                  <span class="fa-icon right">
+                    <component
+                      v-if="link.faIcon"
+                      :is="'font-awesome-icon'"
+                      :icon="link.faIcon"
+                    />
+                  </span>
+                  <div class="after"></div>
+                </b-list-group-item>
+              </template>
+              <template v-else>
+                <b-list-group-item
+                  :key="index"
+                  :title="link.name"
+                  class="sidebar-menu-item mt-2 mb-2 pt-2 pb-2"
+                  :class="`${align}`"
+                  :to="link.href"
+                >
+                  <div class="before"></div>
+                  <span class="fa-icon left">
+                    <component
+                      v-if="link.faIcon"
+                      :is="'font-awesome-icon'"
+                      :icon="link.faIcon"
+                    />
+                  </span>
+                  <span class="link-name">
+                    {{ link.name }}
+                  </span>
+                  <span class="fa-icon right">
+                    <component
+                      v-if="link.faIcon"
+                      :is="'font-awesome-icon'"
+                      :icon="link.faIcon"
+                    />
+                  </span>
+                  <div class="after"></div>
+                </b-list-group-item>
+              </template>
             </template>
 
             <template v-else>

@@ -39,6 +39,12 @@ export default {
       initialShow: true,
       links: [
         { name: "Home", href: { name: "home" }, faIcon: ["fas", "home"] },
+                {
+          name: 'Cursos',
+          href: 'https://moodle.ciaten.org.br/',
+          faIcon: ['fas', 'graduation-cap'],
+          external: true
+        },
         {
           name: "Dropdown",
           faIcon: ["fas", "tint"],
