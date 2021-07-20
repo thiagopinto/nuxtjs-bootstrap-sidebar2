@@ -42,6 +42,7 @@ export default {
         {
           name: "Dropdown",
           faIcon: ["fas", "tint"],
+          visible: true,
           children: [
             {
               name: "Child Item 1",

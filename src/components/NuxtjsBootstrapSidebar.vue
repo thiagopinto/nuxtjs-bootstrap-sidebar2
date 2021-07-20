@@ -92,6 +92,7 @@
                 :key="index + 100"
                 accordion="child-level-1"
                 role="tabpanel"
+                :visible="link.visible"
               >
                 <b-list-group>
                   <b-list-group-item
