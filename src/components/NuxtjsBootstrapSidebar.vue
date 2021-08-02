@@ -14,7 +14,6 @@
           <slot name="logo" />
         </div>
         <span
-          id="sidebarButton"
           class="sidebar-button"
           :class="[theme, show ? 'visible' : 'hidden']"
           @click="onButtonClick"
@@ -32,7 +31,7 @@
                 <b-list-group-item
                   :key="index"
                   :title="link.name"
-                  class="sidebar-menu-item mt-2 mb-2 pt-2 pb-2"
+                  class="sidebar-menu-item mt-2 mb-2 pt-1 pb-1"
                   :class="`${align}`"
                   :href="link.href"
                 >
@@ -61,7 +60,7 @@
                 <b-list-group-item
                   :key="index"
                   :title="link.name"
-                  class="sidebar-menu-item mt-2 mb-2 pt-2 pb-2"
+                  class="sidebar-menu-item mt-2 mb-2 pt-1 pb-1"
                   :class="`${align}`"
                   :to="link.href"
                 >
@@ -92,7 +91,7 @@
               <b-list-group-item
                 :key="index"
                 :title="link.name"
-                class="sidebar-menu-item sidebar-dropdown mt-2 mb-2 pt-2 pb-2"
+                class="sidebar-menu-item sidebar-dropdown mt-2 mb-2 pt-1 pb-1"
                 style="padding-right: 0.03rem"
                 :class="`${align}`"
                 v-b-toggle="`accordion-${index}-${link.href}`"
@@ -128,7 +127,7 @@
                   <b-list-group-item
                     v-for="(child, idChild) in link.children"
                     :key="idChild"
-                    class="sidebar-menu-item child-level-1 mt-2 mb-2 pt-2 pb-2"
+                    class="sidebar-menu-item child-level-1 mt-2 mb-2 pt-1 pb-1"
                     :class="`${align}`"
                     :title="child.name"
                     :to="child.href"
@@ -170,8 +169,7 @@
       <b-nav class="container-fluid">
         <b-nav-item class="left" @click="onButtonClick">
           <span
-            id="sidebarButton"
-            class="sidebar-button"
+            class="sidebar-button-menu"
             :class="[theme, !show ? 'visible' : 'hidden']"
             ><font-awesome-icon :icon="['fas', 'bars']" size="1x" />
           </span>
@@ -179,8 +177,7 @@
         <slot name="navbar" />
         <b-nav-item class="right" @click="onButtonClick">
           <span
-            id="sidebarButton"
-            class="sidebar-button"
+            class="sidebar-button-menu"
             :class="[theme, !show ? 'visible' : 'hidden']"
             ><font-awesome-icon :icon="['fas', 'bars']" size="1x" />
           </span>

@@ -203,6 +203,7 @@
       .sidebar-button.hidden {
         display: none;
       }
+      
     }
 
     .list-group {
@@ -346,7 +347,9 @@
             margin: auto;
           }
         }
-        .sidebar-button.hidden {
+        .sidebar-button-menu.visible {
+        }
+        .sidebar-button-menu.hidden {
           display: none;
         }
       }
@@ -407,7 +410,9 @@
           margin: auto;
         }
       }
-      .sidebar-button.hidden {
+      .sidebar-button-menu.visible {
+      }
+      .sidebar-button-menu.hidden {
         display: none;
       }
     }
