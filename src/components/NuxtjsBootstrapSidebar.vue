@@ -235,17 +235,7 @@ export default {
     };
   },
   beforeMount() {
-    /*     this.$nextTick(function () {
-      this.onResize();
-    }); */
-  
     window.addEventListener("resize", this.onResize);
-    let width = window.document.documentElement.clientWidth;
-    if (width <= 991.98) {
-      this.show = false;
-    } else {
-      this.show = true;
-    }
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.onResize);
