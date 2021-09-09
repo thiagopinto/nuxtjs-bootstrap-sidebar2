@@ -15,7 +15,7 @@
         </div>
         <span
           class="sidebar-button"
-          :class="[theme, show ? 'visible' : 'hidden']"
+          :class="theme"
           @click="onButtonClick"
           ><font-awesome-icon :icon="['far', 'times-circle']" size="1x" />
           <i class="far fa-times-circle"></i>
@@ -234,7 +234,7 @@ export default {
       show: this.initialShow,
     };
   },
-  beforeMount() {
+  mount() {
     /*     this.$nextTick(function () {
       this.onResize();
     }); */

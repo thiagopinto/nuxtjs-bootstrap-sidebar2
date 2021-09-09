@@ -4,7 +4,7 @@
       :initial-show="initialShow"
       :links="links"
       :fa="true"
-      align="right"
+      align="left"
       @sidebarChanged="onSidebarChanged"
     >
       <template v-slot:logo>
