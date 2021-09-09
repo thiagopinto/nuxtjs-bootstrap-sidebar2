@@ -238,7 +238,7 @@ export default {
     /*     this.$nextTick(function () {
       this.onResize();
     }); */
-    this.show = this.
+  
     window.addEventListener("resize", this.onResize);
     let width = window.document.documentElement.clientWidth;
     if (width <= 991.98) {
