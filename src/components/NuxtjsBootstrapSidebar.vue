@@ -212,9 +212,9 @@ export default {
       type: Array,
       default: null,
     },
-    initialShow: {
+    show: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     theme: {
       type: String,
@@ -231,14 +231,14 @@ export default {
   },
   data() {
     return {
-      show: this.initialShow,
+      
     };
   },
-  mount() {
+  beforeMount() {
     /*     this.$nextTick(function () {
       this.onResize();
     }); */
-
+    this.show = this.
     window.addEventListener("resize", this.onResize);
     let width = window.document.documentElement.clientWidth;
     if (width <= 991.98) {
