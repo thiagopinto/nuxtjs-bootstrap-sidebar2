@@ -9,18 +9,19 @@
       data-color="white"
       data-active-color="danger"
     >
+    <a v-on:click.prevent.stop="onButtonClick">
       <div class="sidebar-header logo">
-        <div class="logo-mini" @click="onButtonClick">
+        <div class="logo-mini">
           <slot name="logo" />
         </div>
         <span
           class="sidebar-button"
           :class="theme"
-          @click="onButtonClick"
           ><font-awesome-icon :icon="['far', 'times-circle']" size="1x" />
           <i class="far fa-times-circle"></i>
         </span>
       </div>
+      </a>
       <hr />
       <div class="sidebar-wrapper">
         <b-list-group class="items-wrapper nav">
@@ -212,7 +213,7 @@ export default {
       type: Array,
       default: null,
     },
-    show: {
+    initShow: {
       type: Boolean,
       default: true,
     },
@@ -231,10 +232,11 @@ export default {
   },
   data() {
     return {
-      
+      show: true
     };
   },
   beforeMount() {
+    this.show = JSON.parse(JSON.stringify(this.initShow));
     window.addEventListener("resize", this.onResize);
   },
   beforeDestroy() {
